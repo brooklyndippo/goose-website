@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<!---Website head 
+    to include"
+    article, section
+    nav, main
+    footer, header
+    h1-6
+    ul, li
+--> 
+<head>
+    <meta charset="UTF-8">
+    <title>Goose Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!---Website body--> 
+<body>
+<main>
+    <article id="top">
+        <div id="hero">
+        <header>
+            <h1>MY GEESE</h1>
+
+        <!---Goose Portfolio Navigation Menu--> 
+        <nav>
+            <ul id="menu">
+                <li><a href="#breed">About the breed</a></li>
+                <li><a href="#anatomy">Goose anatomy</a></li>
+                <li><a href="#here">How we got here</a></li>
+                <li><a href="#our-flock">Meet our flock</a></li>
+                <li><a href="#upsides">Upsides?</a></li>
+                <li><a href="#behaviors">Concerning behaviors</a></li>
+                <li><a href="#thoughts">Final thoughts</a></li>
+            </ul>
+        </nav>
+        </header>
+        </div>
+
+        <div id="post-hero">
+        <!---About the breed--> 
+        <section id="breed">
+            <h2>About the breed</h2>
+
+            <p>
+                The story of the Roman Tufted Goose begins in Italy, 365 B.C.E.,  
+                where legend has it the honk of a goose saved the capitol from a 
+                midnight siege. 
+            </p>
+            <p>
+                I have yet to determine if our flock has any heroic qualities, but 
+                my suspcion is that they largely lost in the genetic lottery.
+            </p>
+            <p>
+                They are plump, hissy, and have anarchist tendencies. Their plumage 
+                is entirely white with a tuft on top that resembles a little bird 
+                bicycle helmet. Their bills and feet are a vibrant orange and 
+                their eyes are blue. Ganders (males) have a thicker neck and a 
+                louder honk. 
+            </p>
+            <p>
+                Overall, Roman Tufted Geese make excellent lawn mowers and mediocre friends.
+            </p>
+
+        </section>
+
+        <!---Goose Anatomy--> 
+        <section id="anatomy">
+            <h2>Goose Anatomy</h2>
+            <div id="compare-anatomy">
+            <figure>
+                <img 
+                class="vertical-img"
+                src="goose-anatomy.png" 
+                alt="Anatomical illustration of a goose." 
+                >
+                <figcaption>This anatomical illustration of a goose was plucked directly
+                    from the pages of the Encyclopedia Britannica.
+                </figcaption>
+
+            </figure>
+            <figure>
+                <img 
+                class="vertical-img"
+                src="goose-knife.jpg" 
+                alt="Geese holding knife in bill." 
+                >
+                <figcaption>The domestic goose is a dangerous breed. <em>No geese were harmed
+                    in the making of this website.
+                </em>
+                </figcaption>
+            </figure>
+        </div> 
+        </section>
+
+        <!---How we got here--> 
+        <section id="here">
+            <h2>How We Got Here</h2>
+            <p>It started with adorable little ducklings that we love with all our hearts. 
+                Every day we would take our ducklings out on a walk around the yard to 
+                snack on peas, bugs, and anything else they might want to forage. 
+                As they continued to grow, we decided we wanted to give them free range, 
+                but we were worried about their safety. 
+            </p>
+            <p>Enter <strong>geese!</strong> (AKA viscous feathered guard dogs.) 
+                Geese will alert <u>very</u> loudly when there is danger and they’re particularly 
+                astute to aerial predators like hawks, owls, and helicopters. 
+                We also have high hopes that they might deter our little fluffy mutt 
+                from showing affection to the ducks by putting them in his mouth. 
+            </p>
+            <p>So far, they’re very mediocre employees. There have been no duck 
+                fatalities yet, so we’ll call it a conditional success. 
+            </p>
+        </section>
+
+        <!---Our flock + individual goose photos 
+        create a profile class for geese to style later in CSS--> 
+
+        <section id="our-flock">
+            <h2>Meet Our Flock</h2>
+            <p>Our particular flock of geese has been absurdly inbred for at least six 
+                generations that we know of and though assured by the breeder that 
+                “there haven’t been any problems yet!” we’re documenting new concerns 
+                every day. (See: <a href="#behaviors">concerning behaviors</a>)
+            </p>
+
+
+            <p>That said, good entertainment is hard to come by in the pandemic, and 
+                they provide plenty of it!
+            </p>
+            <section class=goose-profiles>
+            <div class="card">
+                <h3>Bruce</h3>
+                <p>Bruce is easy to tell apart from the others because he’s rockin' a bro 
+                    comb over. Still not sure where he gets his hair gel. 
+                    Every time I ask him he hisses at me. 
+                </p>
+                <figure>
+                    <img 
+                    src="BRUCE.png" 
+                    alt="A goose with a combover tuft."
+                    class="yearbook-photo">
+                    <figcaption>Bruce is easy to pick out with his combover. 
+                    </figcaption>
+                </figure>
+            </div>
+
+
+            <div class="card">
+                <h3>Gwen</h3>
+                <p>The first in our flock, she is the smallest goose and spent a few weeks 
+                    alone among the ducks asking, “What the heck kind of bird am I?” 
+                    She has since found her flock, but still behaves as the liaison to 
+                    the ducks. Gwen is a cousin to the other geese, who we think are
+                    all immediate siblings. </p>
+                <figure>
+                    <img 
+                    src="GWEN.png" 
+                    alt="Small female goose with light orange features."
+                    class="yearbook-photo">
+                    <figcaption>You can tell Gwen apart by her lighter features compared to the other three. 
+                        She also has the smallest tuft and is small in stature.
+                    </figcaption>
+        
+                </figure>
+
+            </div>
+
+            <div class="card">
+                <h3>Lucy</h3>
+                <p>A larger female goose who has a bright orange bill and feet like her brothers, but 
+                    you can tell her apart from them by her smaller and more tamed tuft. 
+                </p>
+                <figure>
+                    <img 
+                    src="LUCY.png" 
+                    alt="A very average female goose."
+                    class="yearbook-photo">
+                    <figcaption>Lucy is smaller than the males and bigger than Gwen. She doesn't really have any distinguishing features. 
+                    </figcaption>
+                </figure>
+            </div>
+
+
+            <div class="card">
+                <h3>Big Beau Crackly</h3>
+                <p>Named by my three-year-old nephew, Big Bo Crackly is the largest 
+                    goose with the thickest neck. He also holds his head at a higher angle at 
+                    all times to assert dominance. It’s all a front and he’s definitely 
+                    the biggest baby of them all. 
+                </p>
+                    <figure>
+                        <img 
+                        class="yearbook-photo"
+                        src="BIG-BEAU-CRACKLY.png" 
+                        alt="Large male goose with head held high."
+                        >
+                        <figcaption>Big Beau Crackly always holds his head at a ridiculously high angle. 
+                        </figcaption>
+                    </figure>
+            </div>
+
+        </section>
+        </section>
+
+        <!---Upsides of having geese--> 
+        <section id="upsides">
+            <h2>Upsides?</h2>
+            <p>If we keep them until next spring, we’ll get to try goose eggs. I’ve never had 
+                a goose egg before, but I imagine it takes cracking only one of these to 
+                make a big, fluffy omelet.
+            </p>
+            <p>There is also the option of hatching and selling baby geese.
+            </p>
+            <p>You know what they say about inbreeding, <em>seventh time’s the charm!</em>
+            </p>
+            <p><sub>*This statement is <u>not</u> approved by science.</sub></p>
+        </section>
+
+        <!---Concerning goose behaviors--> 
+        <section id="behaviors">
+            <h2>Concerning Behaviors</h2>
+            <ul id="bad-habits">
+                <li>Chewing on stairs</li>
+                <li>Eating the siding of the house</li>
+                <li>Biting cinder blocks </li>
+                <li>Flipping over water bowls</li>
+                <li>Attacking the ducks (that they’re meant to protect)</li>
+                <li>Odd, synchronized dance rituals</li>
+                <li>Spontaneous honk-a-thons </li>
+                <li>POOP.</li>
+            </ul>
+        </section>
+
+        <!---Final thoughts--> 
+        <section id="thoughts">
+            <h2>Final Thoughts</h2>
+            <p>Would I recommend geese to others?</p>
+            <p><mark>Yes. And I have four of them for sale if you're interested.</mark></p>
+        </section>
+        </div>
+    </article>
+</main>
+
+
+<footer>
+    <p>Author: Brooklyn Dippo</p>
+    <p>Copyright 2021</p>
+    <p><a href="#top">back to top</a></p>
+</footer>
+</body>
+
+
+</html>

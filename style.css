@@ -1,0 +1,225 @@
+/* Create a root class to store custom variables used more than once throughout the site. */
+
+:root{
+    --dark-teal: #005267;
+    --baby-blue: #D2E4E0;
+    --dark-gray: rgb(32, 32, 32);
+    --off-white: rgb(241, 241, 241);
+    --vertical-image-width: 300px;
+    --vertical-image-height: 400px;
+    --square-image: 200px;
+    --block-height: 400px;
+}
+
+/* Create a hero section - use an image in the background of the page title and navigation bar */
+header{
+    height: 800px;
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+    background-image: url('IMG_1954.jpg');
+    background-size: cover;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+
+/* Styling for the title of the page - add a white background with 90% transparency, 
+large and bold heading font, 10px padding on the top and bottom, stretch across the 
+full width of the page, & align text to center. */
+ h1{
+    font-family: Georgia;
+    letter-spacing: 1.2px;
+    color: var(--dark-teal);
+    opacity: .9;
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: var(--off-white);
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+}
+
+/* Make a navigation bar with a white background with 90% transparency so it is seamless 
+to h1. Add 5px padding to the top and bottom. Next, use the "menu" id to style the navigation 
+list so that it doesn't appear as bullet points and instead is across the top in an evenly spaced row.
+Finally, style the links so that they blend in with site colors and have a transform feature when
+you hover over them to bold and change color. */
+nav{
+    background-color: var(--off-white);
+    opacity: .9;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    margin: 0px;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+}
+
+a{
+    color: var(--dark-teal);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover{
+    color: var(--dark-gray);
+    font-weight: bold;
+}
+
+
+/* Standardize the style for the entire body of the page. Assignt the font Tahoma to all text,
+create a default color, font-size, and line-height for text, create margins (with 0px on top)
+assign a background color, and automatically crop photos rather than stretching with object-fit */
+body {
+    font-family: Verdana;
+    color: var(--dark-gray);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0px auto auto auto;
+    background-color: var(--baby-blue);
+    object-fit: cover;
+}
+
+/* Adjust the width of content after the hero to a maximum of 900px with automatic margins
+to center the content. */
+#post-hero {
+    max-width: 900px;
+    margin:auto;
+}
+
+/* Create default padding for every section to create vertical space. */
+section {
+    padding: 100px 0px 50px 0px;
+}
+
+/* Style h2: make the headings bold, make the color dark teal, size 24 */
+h2{
+    font-family: Georgia;
+    font-weight: bold;
+    color: var(--dark-teal);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Style h3: make the heading 2 uppercase, bold, size 18*/
+h3{
+    font-family: Georgia;
+    color: var(--dark-teal);
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Style p: add additional padding on the left and right so that the text isn't stretching
+too far across the page. Center the text. */
+p {
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/* Create a default vertical image to use in the anatomy section so that both the drawn
+figure and image are the same size. Add a solid border for decoration with a 10px radius
+to round the corners and a shadow to match the card effect. */
+.vertical-img {
+    width: 300px;
+    height: 400px;
+    align-content: center;
+    border-width: 7px;
+    border-color: var(--off-white);
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Next, create flex-box row for the two images in the "compare-anatomy" div so they 
+appear side-by-side. */
+#compare-anatomy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+/* Make sure that image captions are not wider than any of the pictures! */
+figcaption {
+    max-width: var(--vertical-image-width);
+    font-size: .75em;
+    text-align: center;
+}
+
+strong { 
+    text-transform: uppercase; 
+}
+
+
+
+/* Style the Meet Our Flock section like playing cards with info about each goose.
+Create a grid with two columns and two rows that are automatically sized and
+have even spacing between them. */
+.goose-profiles {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+}
+
+/* Style each individual goose's profile like a card. Make the background white, add
+a border radius to round the corners and add a shadow. Display all of the content in a
+flex-box as a column with everything centered on the y-axis. Add a 30px margin to create space
+between the cards and resize the font to be smaller so it fits better in the card. */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--off-white);
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-size: 15px;
+}
+
+/* Style the goose photos to stretch 100% of the width of the container. Without this, they will 
+default to their full image size. */
+.yearbook-photo {
+    width: 100%;
+}
+
+/* Style the list to have two columns so that it fits better in concerning-behaviors. 
+Style the list position to have the bullet points on the inside and add padding*/
+ul {
+    columns: 2;
+    list-style-position: inside;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/* Add padding around the final thoughts section to space out the text, align it in the center,
+and edit the highlight mark to have a white background. */
+#thoughts p {
+    padding: 20px 100px 20px 100px; 
+    text-align: center;
+}
+
+mark {
+    background-color: var(--off-white);
+}
+
+/* Finally, style the footer! Create a flex-box row with even spacing between all the elements
+and padding of 100px on top and 50px on each side. */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 50px 0px 50px;
+}
